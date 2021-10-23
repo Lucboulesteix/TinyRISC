@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "TinyRisc Symbol Library")(type Legacy)(uri "C:/Users/Luc/OneDrive/TinyRISC project/GT backup/TinyRISC/Kicad Libraries/TinyRisc Symbol Library.lib")(options "")(descr ""))
+  (lib (name Program-Counter-rescue)(type Legacy)(uri "${KIPRJMOD}/Program Counter-rescue.lib")(options "")(descr ""))
 )
