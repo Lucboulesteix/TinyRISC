@@ -2468,10 +2468,10 @@ $EndComp
 Text Label 8100 3850 0    50   ~ 0
 GND
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR02
 U 1 1 65EB999C
 P 1950 5800
-F 0 "#PWR?" H 1950 5550 50  0001 C CNN
+F 0 "#PWR02" H 1950 5550 50  0001 C CNN
 F 1 "GNDREF" V 1955 5672 50  0000 R CNN
 F 2 "" H 1950 5800 50  0001 C CNN
 F 3 "" H 1950 5800 50  0001 C CNN
@@ -2479,10 +2479,10 @@ F 3 "" H 1950 5800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR03
 U 1 1 65EBA7D8
 P 1950 7550
-F 0 "#PWR?" H 1950 7300 50  0001 C CNN
+F 0 "#PWR03" H 1950 7300 50  0001 C CNN
 F 1 "GNDREF" V 1955 7422 50  0000 R CNN
 F 2 "" H 1950 7550 50  0001 C CNN
 F 3 "" H 1950 7550 50  0001 C CNN
@@ -2490,10 +2490,10 @@ F 3 "" H 1950 7550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR04
 U 1 1 65EBC538
 P 2000 3950
-F 0 "#PWR?" H 2000 3700 50  0001 C CNN
+F 0 "#PWR04" H 2000 3700 50  0001 C CNN
 F 1 "GNDREF" V 2005 3822 50  0000 R CNN
 F 2 "" H 2000 3950 50  0001 C CNN
 F 3 "" H 2000 3950 50  0001 C CNN
@@ -2501,10 +2501,10 @@ F 3 "" H 2000 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR01
 U 1 1 65EBD31C
 P 1950 2200
-F 0 "#PWR?" H 1950 1950 50  0001 C CNN
+F 0 "#PWR01" H 1950 1950 50  0001 C CNN
 F 1 "GNDREF" V 1955 2072 50  0000 R CNN
 F 2 "" H 1950 2200 50  0001 C CNN
 F 3 "" H 1950 2200 50  0001 C CNN
@@ -2512,45 +2512,45 @@ F 3 "" H 1950 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H7
 U 1 1 65F3113E
 P 6150 1550
-F 0 "H?" V 6104 1700 50  0000 L CNN
+F 0 "H7" V 6104 1700 50  0000 L CNN
 F 1 "MountingHole_Pad" V 6195 1700 50  0000 L CNN
-F 2 "" H 6150 1550 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm_Pad_Via" H 6150 1550 50  0001 C CNN
 F 3 "~" H 6150 1550 50  0001 C CNN
 	1    6150 1550
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H8
 U 1 1 65F328D9
 P 6150 1750
-F 0 "H?" V 6104 1900 50  0000 L CNN
+F 0 "H8" V 6104 1900 50  0000 L CNN
 F 1 "MountingHole_Pad" V 6195 1900 50  0000 L CNN
-F 2 "" H 6150 1750 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm_Pad_Via" H 6150 1750 50  0001 C CNN
 F 3 "~" H 6150 1750 50  0001 C CNN
 	1    6150 1750
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H5
 U 1 1 65F32A38
 P 5450 1950
-F 0 "H?" H 5350 1907 50  0000 R CNN
+F 0 "H5" H 5350 1907 50  0000 R CNN
 F 1 "MountingHole_Pad" H 5350 1998 50  0000 R CNN
-F 2 "" H 5450 1950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm_Pad_Via" H 5450 1950 50  0001 C CNN
 F 3 "~" H 5450 1950 50  0001 C CNN
 	1    5450 1950
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H6
 U 1 1 65F32D4C
 P 5600 1950
-F 0 "H?" H 5500 1907 50  0000 R CNN
+F 0 "H6" H 5500 1907 50  0000 R CNN
 F 1 "MountingHole_Pad" H 5500 1998 50  0000 R CNN
-F 2 "" H 5600 1950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm_Pad_Via" H 5600 1950 50  0001 C CNN
 F 3 "~" H 5600 1950 50  0001 C CNN
 	1    5600 1950
 	-1   0    0    1   
@@ -2601,4 +2601,48 @@ Connection ~ 6050 1550
 Connection ~ 5800 1300
 Wire Wire Line
 	5800 1300 5800 1400
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 66031251
+P 3150 700
+F 0 "H1" H 3250 746 50  0000 L CNN
+F 1 "MountingHole" H 3250 655 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm_Pad_Via" H 3150 700 50  0001 C CNN
+F 3 "~" H 3150 700 50  0001 C CNN
+	1    3150 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 66031787
+P 3300 700
+F 0 "H2" H 3400 746 50  0000 L CNN
+F 1 "MountingHole" H 3400 655 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm_Pad_Via" H 3300 700 50  0001 C CNN
+F 3 "~" H 3300 700 50  0001 C CNN
+	1    3300 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6603193D
+P 3450 700
+F 0 "H3" H 3550 746 50  0000 L CNN
+F 1 "MountingHole" H 3550 655 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm_Pad_Via" H 3450 700 50  0001 C CNN
+F 3 "~" H 3450 700 50  0001 C CNN
+	1    3450 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 66031AE9
+P 3600 700
+F 0 "H4" H 3700 746 50  0000 L CNN
+F 1 "MountingHole" H 3700 655 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm_Pad_Via" H 3600 700 50  0001 C CNN
+F 3 "~" H 3600 700 50  0001 C CNN
+	1    3600 700 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

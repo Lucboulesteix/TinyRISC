@@ -1,4 +1,4 @@
-173321701616033
+173321684142953
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -30149,19 +30149,19 @@ L_Toroid_Vertical_L67.6mm_W36.1mm_P31.80mm_Vishay_TJ9
 0
 0
 Kicad Libraries
-16pinIDC
-4.65
-Connector
-0
-16
-16
-Kicad Libraries
 NE555DR
 D (R-PDSO-G8)
 Integrated Circuit
 0
 8
 8
+Kicad Libraries
+SHDR16W64P254_2X8_2810X930X945P
+4.65
+Connector
+0
+16
+16
 LEDs
 LED-L1T2_LUMILEDS
 

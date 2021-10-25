@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP 09185167324
+D Connector SEK-18 LP solder 16-way m Harting SEK Series, 2.54mm Pitch 16 Way 2 Row Shrouded Straight PCB Header, Through Hole, Solder Termination
+K
+F https://b2b.harting.com/files/download/PRD/PDF_TS/09185XXX324_100154466DRW008A.pdf
+$ENDCMP
+#
+#End Doc Library
