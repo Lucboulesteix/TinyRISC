@@ -12,4 +12,10 @@ K
 F https://b2b.harting.com/files/download/PRD/PDF_TS/09185XXX324_100154466DRW008A.pdf
 $ENDCMP
 #
+$CMP 09185067904
+D Connectors, Male connector, Wave soldering termination, Rated current: 1 A, Straight
+K
+F https://componentsearchengine.com/Datasheets/1/09185067904.pdf
+$ENDCMP
+#
 #End Doc Library

@@ -1743,17 +1743,6 @@ Wire Wire Line
 Text GLabel 4200 6300 0    50   Input ~ 0
 CLK
 $Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 6303158B
-P 5750 5900
-F 0 "J3" H 5722 5782 50  0000 R CNN
-F 1 "Control" H 5722 5873 50  0000 R CNN
-F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 5750 5900 50  0001 C CNN
-F 3 "~" H 5750 5900 50  0001 C CNN
-	1    5750 5900
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x01_Male J4
 U 1 1 63032662
 P 5750 6300
@@ -1765,19 +1754,11 @@ F 3 "~" H 5750 6300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4500 5700 5550 5700
-Wire Wire Line
 	5350 5850 5350 5800
-Wire Wire Line
-	5350 5800 5550 5800
 Wire Wire Line
 	5350 6000 5350 5900
 Wire Wire Line
-	5350 5900 5550 5900
-Wire Wire Line
 	5450 6150 5450 6000
-Wire Wire Line
-	5450 6000 5550 6000
 Wire Wire Line
 	5050 6150 5450 6150
 Wire Wire Line
@@ -2619,6 +2600,27 @@ F 3 "~" H 3600 700 50  0001 C CNN
 	1    3600 700 
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 617B196B
+P 5950 5800
+F 0 "J3" H 5922 5682 50  0000 R CNN
+F 1 "Control" H 5922 5773 50  0000 R CNN
+F 2 "Kicad Libraries:6pinIDC" H 5950 5800 50  0001 C CNN
+F 3 "~" H 5950 5800 50  0001 C CNN
+	1    5950 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 6000 5750 6000
+Wire Wire Line
+	5350 5900 5750 5900
+Wire Wire Line
+	5350 5800 5750 5800
+Wire Wire Line
+	4500 5700 5750 5700
+NoConn ~ 5750 5500
+NoConn ~ 5750 5600
 Wire Bus Line
 	6450 2800 6450 3800
 Wire Bus Line

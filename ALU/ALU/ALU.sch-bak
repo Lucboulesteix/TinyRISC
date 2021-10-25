@@ -120,6 +120,17 @@ $EndComp
 Wire Bus Line
 	2600 6400 1550 6400
 $Comp
+L TinyRisc_Symbol_Library:74F32 DECODEROR0
+U 1 1 6178DC67
+P 2250 7300
+F 0 "DECODEROR0" H 2250 6777 50  0000 C CNN
+F 1 "74F32" H 2250 6686 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 2250 7300 50  0001 C CNN
+F 3 "" H 2250 7300 50  0001 C CNN
+	1    2250 7300
+	1    0    0    -1  
+$EndComp
+$Comp
 L TinyRisc_Symbol_Library:74F32 DECODEOR1
 U 1 1 6178EB8E
 P 2250 8700
@@ -149,6 +160,14 @@ Wire Wire Line
 	1650 7400 1850 7400
 Text Label 1850 7400 0    50   Italic 0
 !C
+Wire Wire Line
+	2650 7150 2950 7150
+Text GLabel 3050 7050 2    50   Input Italic 0
+~RIGHT_EN
+Wire Wire Line
+	2950 7150 2950 7050
+Wire Wire Line
+	3050 7050 2950 7050
 Text Notes 2600 7150 0    50   Italic 0
 (A.B)+!C
 Wire Wire Line
@@ -160,6 +179,10 @@ Entry Wire Line
 	1300 7400 1400 7500
 Text Label 1850 7500 0    50   Italic 0
 C
+Wire Wire Line
+	2650 7250 3000 7250
+Text GLabel 3000 7250 2    50   Input Italic 0
+~LEFT_EN
 Text Notes 2600 7250 0    50   Italic 0
 (A.B)+C\n
 Entry Wire Line
@@ -302,6 +325,8 @@ Wire Wire Line
 Connection ~ 3200 7650
 Wire Wire Line
 	3450 8050 3150 8050
+Wire Wire Line
+	3150 8050 3150 8650
 Wire Wire Line
 	2650 8650 3150 8650
 Wire Wire Line
@@ -657,7 +682,7 @@ Entry Wire Line
 	1300 3150 1400 3250
 Wire Wire Line
 	1400 3250 1600 3250
-Text Label 1400 3250 0    50   Italic 0
+Text Label 1450 3250 2    50   Italic 0
 D
 Text GLabel 8500 1400 1    50   Input Italic 0
 D
@@ -3365,6 +3390,7 @@ Wire Wire Line
 	18450 4300 17450 4300
 Wire Wire Line
 	17450 4300 17450 3400
+NoConn ~ 18350 5350
 NoConn ~ 18350 5450
 NoConn ~ 18350 5550
 NoConn ~ 19650 2650
@@ -3537,11 +3563,34 @@ F 3 "" H 17400 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+	17550 5150 17500 5150
+Wire Wire Line
+	17500 5150 17500 5250
+Wire Wire Line
+	17500 5250 17550 5250
+Wire Wire Line
+	17550 5250 17550 5350
+Connection ~ 17550 5250
+Wire Wire Line
+	17500 5250 17500 5600
+Wire Wire Line
+	17500 5600 17550 5600
+Connection ~ 17500 5250
+Wire Wire Line
+	17500 5600 17500 5700
+Wire Wire Line
+	17500 5700 17550 5700
+Connection ~ 17500 5600
+Wire Wire Line
+	17500 5700 17500 5800
+Wire Wire Line
 	17500 5800 17550 5800
+Connection ~ 17500 5700
 Wire Wire Line
 	17500 5800 17500 5850
 Wire Wire Line
 	17500 5850 17400 5850
+Connection ~ 17500 5800
 $Comp
 L power:GNDREF #PWR070
 U 1 1 65F54F16
@@ -5648,6 +5697,25 @@ Connection ~ 15800 7750
 NoConn ~ 2400 5500
 NoConn ~ 2400 5600
 NoConn ~ 2400 5700
+$Comp
+L power:GNDREF #PWR02
+U 1 1 6CC091CB
+P 1850 7850
+F 0 "#PWR02" H 1850 7600 50  0001 C CNN
+F 1 "GNDREF" H 1855 7677 50  0000 C CNN
+F 2 "" H 1850 7850 50  0001 C CNN
+F 3 "" H 1850 7850 50  0001 C CNN
+	1    1850 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 7700 1800 7700
+Wire Wire Line
+	1800 7700 1800 7200
+Wire Wire Line
+	1800 7200 1850 7200
+Connection ~ 1850 7700
+NoConn ~ 2650 7450
 NoConn ~ 4900 9800
 $Comp
 L TinyRisc_Symbol_Library:74F86 XOR41
@@ -5884,10 +5952,19 @@ Wire Wire Line
 Wire Wire Line
 	2300 8050 2350 8050
 Wire Wire Line
+	1850 7700 1850 7750
+Wire Wire Line
 	2350 8050 2350 8000
 Wire Wire Line
 	2350 8000 2050 8000
+Wire Wire Line
+	2050 8000 2050 7750
+Wire Wire Line
+	2050 7750 1850 7750
 Connection ~ 2350 8050
+Connection ~ 1850 7750
+Wire Wire Line
+	1850 7750 1850 7850
 Wire Wire Line
 	16850 7900 16850 7950
 Wire Wire Line
@@ -5915,152 +5992,6 @@ NoConn ~ 1600 5750
 NoConn ~ 1600 5850
 Wire Wire Line
 	9250 1100 9250 1250
-Connection ~ 9250 1250
-$Comp
-L TinyRisc_Symbol_Library:74F32 DECODEROR0
-U 1 1 6178DC67
-P 2250 7300
-F 0 "DECODEROR0" H 2250 6777 50  0000 C CNN
-F 1 "74F32" H 2250 6686 50  0000 C CNN
-F 2 "Housings_DIP:DIP-14_W7.62mm" H 2250 7300 50  0001 C CNN
-F 3 "" H 2250 7300 50  0001 C CNN
-	1    2250 7300
-	1    0    0    -1  
-$EndComp
-Entry Wire Line
-	1300 3250 1400 3350
-Entry Wire Line
-	1300 3350 1400 3450
-Wire Wire Line
-	1400 3350 1600 3350
-Wire Wire Line
-	1400 3450 1600 3450
-Text Label 1400 3350 0    50   Italic 0
-B
-Text Label 1400 3450 0    50   Italic 0
-A
-Text GLabel 1600 3350 2    50   Input Italic 0
-B
-Text GLabel 1600 3450 2    50   Input Italic 0
-A
-Text GLabel 17550 5150 0    50   Input Italic 0
-A
-Text GLabel 17550 5600 0    50   Input Italic 0
-B
-Text GLabel 18350 5350 2    50   Input Italic 0
-AXORB
-Text GLabel 1850 7200 0    50   Input Italic 0
-AXORB
-Text GLabel 2650 7450 2    50   Input Italic 0
-~LEFT_EN
-Wire Wire Line
-	3050 7250 3050 7800
-Wire Wire Line
-	3050 7800 1800 7800
-Wire Wire Line
-	1800 7800 1800 7700
-Wire Wire Line
-	1800 7700 1850 7700
-Wire Wire Line
-	2650 7250 3050 7250
-$Comp
-L TinyRisc_Symbol_Library:74F32 DECODEROR1
-U 1 1 74F043A1
-P 2250 10150
-F 0 "DECODEROR1" H 2250 9627 50  0000 C CNN
-F 1 "74F32" H 2250 9536 50  0000 C CNN
-F 2 "Housings_DIP:DIP-14_W7.62mm" H 2250 10150 50  0001 C CNN
-F 3 "" H 2250 10150 50  0001 C CNN
-	1    2250 10150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C37
-U 1 1 74F04DDB
-P 2650 9650
-F 0 "C37" H 2765 9696 50  0000 L CNN
-F 1 "100nF" H 2765 9605 50  0000 L CNN
-F 2 "Capacitors_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 2688 9500 50  0001 C CNN
-F 3 "~" H 2650 9650 50  0001 C CNN
-	1    2650 9650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 9500 2650 9400
-Wire Wire Line
-	2650 9400 2200 9400
-Wire Wire Line
-	2200 9400 2200 9500
-Wire Wire Line
-	2650 9800 2500 9800
-Wire Wire Line
-	2500 9800 2500 9500
-Wire Wire Line
-	2500 9500 2300 9500
-$Comp
-L power:+5V #PWR0113
-U 1 1 750FC9E2
-P 2700 9500
-F 0 "#PWR0113" H 2700 9350 50  0001 C CNN
-F 1 "+5V" V 2715 9628 50  0000 L CNN
-F 2 "" H 2700 9500 50  0001 C CNN
-F 3 "" H 2700 9500 50  0001 C CNN
-	1    2700 9500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GNDREF #PWR0114
-U 1 1 750FC9E8
-P 2700 9800
-F 0 "#PWR0114" H 2700 9550 50  0001 C CNN
-F 1 "GNDREF" V 2705 9672 50  0000 R CNN
-F 2 "" H 2700 9800 50  0001 C CNN
-F 3 "" H 2700 9800 50  0001 C CNN
-	1    2700 9800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2700 9500 2650 9500
-Connection ~ 2650 9500
-Wire Wire Line
-	2700 9800 2650 9800
-Connection ~ 2650 9800
-Text GLabel 1850 9750 0    50   Input Italic 0
-AXORB
-Text GLabel 2650 10000 2    50   Input Italic 0
-~RIGHT_EN
-Wire Wire Line
-	3150 8050 3150 8650
-Wire Wire Line
-	1850 10250 1700 10250
-Wire Wire Line
-	1700 10250 1700 9300
-Wire Wire Line
-	1700 9300 2700 9300
-Wire Wire Line
-	2700 9300 2700 8300
-Wire Wire Line
-	2700 8300 2850 8300
-Wire Wire Line
-	2850 8300 2850 7650
-Wire Wire Line
-	2850 7650 3100 7650
-Wire Wire Line
-	3100 7650 3100 7150
-Wire Wire Line
-	2650 7150 3100 7150
-NoConn ~ 1850 10550
-NoConn ~ 1850 10450
-NoConn ~ 1850 10350
-NoConn ~ 1850 10050
-NoConn ~ 1850 9950
-NoConn ~ 1850 9850
-NoConn ~ 2650 10300
-NoConn ~ 2650 10200
-NoConn ~ 2650 10100
-NoConn ~ 17550 5350
-NoConn ~ 17550 5250
-NoConn ~ 17550 5700
 Wire Bus Line
 	13450 7500 13450 9400
 Wire Bus Line
@@ -6134,6 +6065,8 @@ Wire Bus Line
 Wire Bus Line
 	6850 1500 6850 3400
 Wire Bus Line
+	1300 3050 1300 9350
+Wire Bus Line
 	11350 1550 13400 1550
 Wire Bus Line
 	10300 8350 10300 15100
@@ -6144,7 +6077,6 @@ Wire Bus Line
 Wire Bus Line
 	5500 1150 7000 1150
 Wire Bus Line
-	1300 3050 1300 9350
-Wire Bus Line
 	3650 1150 5350 1150
+Connection ~ 9250 1250
 $EndSCHEMATC

@@ -5648,7 +5648,6 @@ Connection ~ 15800 7750
 NoConn ~ 2400 5500
 NoConn ~ 2400 5600
 NoConn ~ 2400 5700
-NoConn ~ 4900 9800
 $Comp
 L TinyRisc_Symbol_Library:74F86 XOR41
 U 1 1 617E9455
