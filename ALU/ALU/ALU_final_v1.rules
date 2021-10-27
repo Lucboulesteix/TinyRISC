@@ -1,0 +1,118 @@
+
+(rules PCB ALU_final_v1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 30562)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 300.2 (type default_Power))
+    (clear 50.0 (type smd_smd))
+    (clear 300.2 (type smd_Power))
+    (clear 300.2 (type "kicad_default"_Power))
+    (clear 300.2 (type Power_Power))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /S1 "Net-(ADD4.0-Pad9)" "Net-(ADD4.0-Pad2)" /S3 /A1 "Net-(ADD4.0-Pad11)" /S0 /A3
+    "SR_COUT" /S2 "Net-(ADD4.0-Pad6)" /A2 CarryIn "Net-(ADD4.0-Pad15)" /S5 "ADD_COUT"
+    "Net-(ADD4.1-Pad2)" "ADD_N" /A5 "Net-(ADD4.1-Pad11)" /S4 "SL_COUT" /A4 /S6
+    "Net-(ADD4.1-Pad6)" "SL_N" "Net-(ADD4.1-Pad15)" /S9 "ADD_CX" "Net-(ADD4.2-Pad2)" /A9 "Net-(ADD4.2-Pad11)"
+    /S8 /A11 /A8 /S10 "Net-(ADD4.2-Pad6)" /A10 "Net-(ADD4.2-Pad15)" /S13
+    "Net-(ADD4.3-Pad9)" "Net-(ADD4.3-Pad2)" /S15 /A13 "Net-(ADD4.3-Pad11)" /S12 /A15 /A12
+    /S14 "Net-(ADD4.3-Pad6)" /A14 "Net-(ADD4.3-Pad15)" "Logical_N" /O6 /O5 /O4
+    /O3 /O2 /O1 /O0 "~ADDER_EN" /O15 /O14 /O13
+    /O12 /O11 /O10 /O9 /O8 nBit /C D
+    "Net-(AND0-Pad8)" /B0 "Net-(AND0-Pad3)" /B2 "Net-(AND0-Pad11)" /B1 "Net-(AND0-Pad6)" /B3
+    "Net-(AND1-Pad8)" /B4 "Net-(AND1-Pad3)" /B6 "Net-(AND1-Pad11)" /B5 "Net-(AND1-Pad6)" /B7
+    "~AND_EN" ~Z Z "~LOG_EN" "~NAND_EN" "~OR_EN" "~XOR_EN" "~RIGHT_EN"
+    "~LEFT_EN" /Ov /N /Carry "Net-(FlagsAdd0-Pad11)" "Net-(FlagsAdd0-Pad12)" "Net-(FlagsAdd0-Pad13)" "Net-(FlagsAdd0-Pad4)"
+    "Net-(FlagsAdd0-Pad14)" "Net-(FlagsLeft1-Pad11)" "Net-(FlagsLeft1-Pad12)" "Net-(FlagsLeft1-Pad13)" "Net-(FlagsLeft1-Pad14)" "Net-(FlagsLogical1-Pad11)" "Net-(FlagsLogical1-Pad12)" "Net-(FlagsLogical1-Pad13)"
+    "Net-(FlagsLogical1-Pad14)" "Net-(FlagsRight1-Pad11)" "Net-(FlagsRight1-Pad12)" "SR_N" "Net-(FlagsRight1-Pad13)" "Net-(FlagsRight1-Pad14)" "Net-(MUXCout1-Pad9)" "Net-(MUXCout1-Pad10)"
+    "Net-(MUXCout1-Pad11)" "Net-(MUXCout1-Pad12)" "Net-(MUXCout1-Pad13)" "Net-(MUXCout1-Pad14)" /SL0 "Net-(NAND0-Pad8)" "Net-(NAND0-Pad3)" "Net-(NAND0-Pad11)"
+    "Net-(NAND0-Pad6)" "Net-(NAND1-Pad8)" "Net-(NAND1-Pad3)" "Net-(NAND1-Pad11)" "Net-(NAND1-Pad6)" /B15 /B14 /B13
+    /B12 /B11 /B10 /B9 /B8 "Net-(OR0-Pad8)" "Net-(OR0-Pad3)" "Net-(OR0-Pad11)"
+    "Net-(OR0-Pad6)" "Net-(OR1-Pad8)" "Net-(OR1-Pad3)" "Net-(OR1-Pad11)" "Net-(OR1-Pad6)" "Net-(XOR0-Pad8)" "Net-(XOR0-Pad3)" "Net-(XOR0-Pad11)"
+    "Net-(XOR0-Pad6)" "Net-(XOR1-Pad8)" "Net-(XOR1-Pad3)" "Net-(XOR1-Pad11)" "Net-(XOR1-Pad6)" A B "Net-(OverflowXOR1-Pad8)"
+    "Net-(OverflowXOR1-Pad10)" "Net-(OverflowXOR1-Pad11)" "Net-(OverflowXOR1-Pad12)" "Net-(OverflowXOR1-Pad13)" "Net-(DEC1-Pad7)" "Net-(NAND41-Pad13)" "Net-(NAND41-Pad6)" "Net-(NAND41-Pad12)"
+    "Net-(NAND41-Pad5)" "Net-(NAND41-Pad11)" "Net-(NAND41-Pad4)" "Net-(NAND41-Pad10)" "Net-(NAND41-Pad9)" "Net-(NAND41-Pad8)" "Net-(ADD4.2-Pad9)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    +5V GNDREF
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

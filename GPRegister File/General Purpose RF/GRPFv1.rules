@@ -1,0 +1,106 @@
+
+(rules PCB GRPFv1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 17153)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 300.2 (type default_Power))
+    (clear 50.0 (type smd_smd))
+    (clear 300.2 (type smd_Power))
+    (clear 300.2 (type "kicad_default"_Power))
+    (clear 300.2 (type Power_Power))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    LE7 "Net-(DECWrite1-Pad10)" "Net-(DECWrite1-Pad9)" "Net-(DECWrite1-Pad7)" "Net-(DECWrite1-Pad6)" "Net-(DECWrite1-Pad15)" "Net-(DECWrite1-Pad14)" "Net-(DECWrite1-Pad13)"
+    /W2 "Net-(DECWrite1-Pad12)" /W1 "Net-(DECWrite1-Pad11)" /W0 ~AEO5 ~AEO6 ~AEO7
+    ~AEO0 ~AEO1 ~AEO2 /X2 ~AEO3 /X1 ~AEO4 /X0
+    ~BEO5 ~BEO6 ~BEO7 ~BEO0 ~BEO1 ~BEO2 /Y2 ~BEO3
+    /Y1 ~BEO4 /Y0 "Net-(INV1-Pad13)" LE2 "Net-(INV1-Pad12)" "Net-(INV1-Pad11)" LE1
+    "Net-(INV1-Pad10)" LE0 LE3 "Net-(INV2-Pad13)" LE6 "Net-(INV2-Pad12)" "Net-(INV2-Pad11)" LE5
+    "Net-(INV2-Pad10)" LE4 "Net-(JR1-Pad5)" "Net-(JR1-Pad4)" /A0 /W7 /A1 /W6
+    /A2 /W5 /A3 /W4 /A4 /W3 /A5 /A6
+    /A7 /B0 /B1 /B2 /B3 /B4 /B5 /B6
+    /B7 "Net-(R2-Pad5)" "Net-(R2-Pad4)" "Net-(W1-Pad5)" "Net-(W1-Pad4)" "Net-(DECRead1-Pad6)" "Net-(DECRead2-Pad6)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GNDREF +5V
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
