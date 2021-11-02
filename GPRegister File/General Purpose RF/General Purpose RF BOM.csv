@@ -1,0 +1,13 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"C_BOARD1";"CP_Radial_D10.0mm_P5.00mm";1;"10 uF";;;
+2;"~R2OE7,~R1OE7,7WE1";"Pin_D1.0mm_L10.0mm";3;"Conn_01x01_Male";;;
+3;"Write1,Read2,Read1";"16pinIDC";3;"Conn_01x08_Male";;;
+4;"W1,Read 2 ID,Read 1 ID";"6pinIDC";3;"Conn_01x06_Male";;;
+5;"Latch8B6,Latch8B5,Latch8B4,Latch8B3,Latch8B2,Latch8B1,Latch8B0,Latch8A6,Latch8A5,Latch8A4,Latch8A3,Latch8A2,Latch8A1,Latch8A0";"DIP-20_W7.62mm";14;"74F573";;;
+6;"INV2,INV1";"DIP-14_W7.62mm";2;"74F04";;;
+7;"H8,H7,H6,H3";"MountingHole_3.5mm_Pad_Via";4;"MountingHole_Pad";;;
+8;"H5,H4,H2,H1";"MountingHole_3.5mm_Pad_Via";4;"MountingHole";;;
+9;"DECRead2,DECRead1,DECWrite1";"DIP-20_W7.62mm";3;"74F138";;;
+10;"CB6,CB5,CB4,CB3,CB1,CB0,CA11,CA10,CA9,CA8,CA7,CA6,CA5,CA4,CA2,CA1,CA0";"C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal";17;"100nF";;;
+11;"CB2,CA3";"C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal";2;"100nf";;;
+12;"5V/GND1";"JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical";1;"Conn_01x02_Male";;;
