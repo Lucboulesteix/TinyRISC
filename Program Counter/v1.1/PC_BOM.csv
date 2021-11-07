@@ -1,0 +1,18 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"H8,H7,H6,H5";"MountingHole_3.5mm_Pad_Via";4;"MountingHole_Pad";;;
+2;"H4,H3,H2,H1";"MountingHole_3.5mm_Pad_Via";4;"MountingHole";;;
+3;"C13,C12,C11,C9,C8,C7,C6,C5,C4,C2,C1";"C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal";11;"100nF";;;
+4;"C10";"C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal";1;"100nf";;;
+5;"C3";"C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal";1;"C?";;;
+6;"REG8.2,REG8.1";"DIP-24_W7.62mm";2;"74F825";;;
+7;"R14,R10,R5,R4";"R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal";4;"10K";;;
+8;"R6";"R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal";1;"100";;;
+9;"POT1";"Potentiometer_Trimmer_ACP_CA14h5_Vertical_Px5.0mm_Py10.0mm";1;"1K";;;
+10;"MUXB2,MUXB1,MUXA4,MUXA3,MUXA2,MUXA1";"DIP-16_W7.62mm";6;"74F257";;;
+11;"J5";"JST_NV_B02P-NV_2x5.00mm_Vertical";1;"POWER/GND";;;
+12;"J4";"1pin";1;"Clock";;;
+13;"J3";"JST_XH_B04B-XH-A_04x2.50mm_Straight";1;"Control";;;
+14;"J2";"JST_XH_B16B-XH-A_16x2.50mm_Straight";1;"PC_OFFS";;;
+15;"J1";"JST_XH_B16B-XH-A_16x2.50mm_Straight";1;"PC_OUT";;;
+16;"C_BOARD1";"CP_Radial_D8.0mm_P2.50mm";1;"10uF";;;
+17;"ADD4.2,ADD4.1,ADD4.3,ADD4.4";"DIP-16_W7.62mm";4;"74F283";;;

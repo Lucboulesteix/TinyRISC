@@ -1542,10 +1542,6 @@ Wire Wire Line
 Wire Wire Line
 	7100 8050 7100 8000
 Wire Bus Line
-	5500 15650 5550 15650
-Wire Bus Line
-	5350 15700 5300 15700
-Wire Bus Line
 	5350 5150 5350 8250
 $Comp
 L TinyRisc_Symbol_Library:74F00 NAND0
@@ -1679,8 +1675,6 @@ Wire Wire Line
 	5600 9350 6050 9350
 Wire Wire Line
 	6050 9450 5600 9450
-Wire Bus Line
-	5350 8550 5350 15700
 Entry Wire Line
 	5500 10250 5600 10350
 Entry Wire Line
@@ -1935,14 +1929,11 @@ Text GLabel 7950 13300 2    50   Input Italic 0
 ~XOR_EN
 Wire Bus Line
 	5350 8250 10150 8250
-Wire Bus Line
-	10150 8250 10150 14850
 Connection ~ 5350 8250
 Wire Bus Line
 	5350 8250 5350 8550
 Wire Bus Line
 	5500 8350 10300 8350
-Connection ~ 5500 8350
 $Comp
 L TinyRisc_Symbol_Library:74F245 AND_GATE1
 U 1 1 624820F5
@@ -2443,8 +2434,6 @@ Wire Wire Line
 Wire Wire Line
 	11650 10200 11650 10150
 Wire Bus Line
-	8600 14300 8600 12000
-Wire Bus Line
 	8600 7500 11650 7500
 Wire Bus Line
 	8800 6800 8800 6150
@@ -2664,7 +2653,6 @@ Text Label 8200 12700 0    50   Italic 0
 O7
 Wire Bus Line
 	8300 12000 8600 12000
-Connection ~ 8600 12000
 Wire Bus Line
 	8600 12000 8600 9350
 Entry Wire Line
@@ -5585,7 +5573,6 @@ NoConn ~ 1750 6950
 NoConn ~ 1750 7050
 NoConn ~ 16750 3350
 NoConn ~ 3850 6550
-NoConn ~ 8750 13000
 Wire Wire Line
 	10100 2550 10100 2450
 Wire Wire Line
@@ -5594,6 +5581,10 @@ Wire Wire Line
 	10050 2450 10050 2300
 Wire Wire Line
 	10100 2550 10300 2550
+Wire Bus Line
+	5350 8550 5350 13450
+Wire Bus Line
+	10150 8250 10150 13750
 Wire Bus Line
 	13450 7500 13450 9400
 Wire Bus Line
@@ -5669,13 +5660,14 @@ Wire Bus Line
 Wire Bus Line
 	11350 1550 13400 1550
 Wire Bus Line
-	10300 8350 10300 15100
-Wire Bus Line
-	5500 8350 5500 15650
+	10300 8350 10300 13750
 Wire Bus Line
 	10150 3000 10150 5400
 Wire Bus Line
 	5500 1150 7000 1150
 Wire Bus Line
 	3650 1150 5350 1150
+Connection ~ 5500 8350
+Wire Bus Line
+	5500 8350 5500 13450
 $EndSCHEMATC
